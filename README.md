@@ -1,37 +1,41 @@
-# AutoIt Firewall Blocker
+# Firewall Blocker
 
-
-## Overview
-
-This AutoIt script provides a graphical user interface (GUI) for scanning a folder, listing executable (.exe) files, and blocking selected .exe files in both inbound and outbound Windows Firewall rules.
+Firewall Blocker is a simple GUI application written in AutoIt that allows users to manage Windows Firewall rules for blocking or unblocking executable files in a specified folder.
 
 ## Features
 
-- Browse and select a folder for scanning.
-- Scan the selected folder and list all executable (.exe) files in the ListView.
-- Check the checkboxes to select specific .exe files for blocking.
-- Block selected .exe files in both inbound and outbound Windows Firewall rules.
-- Clear the list of scanned files.
-- Automatic adjustment of column width in the ListView based on content.
+- Browse and select a folder to scan for executable files (.exe).
+- View a list of executable files found in the selected folder.
+- Select individual files or use "Select All" to choose multiple files for blocking or unblocking.
+- Block selected executable files by creating inbound and outbound firewall rules.
+- Remove firewall blocks for selected executable files.
+- Clear the list of executable files displayed in the GUI.
 
-## Prerequisites
+## Requirements
 
-- AutoIt (Download and install from [AutoIt Downloads](https://www.autoitscript.com/site/autoit/downloads/))
-- Windows operating system (Administrator privileges required for blocking firewall rules)
+- Windows operating system with administrative privileges.
+- AutoIt scripting language installed.
+
+## Installation
+
+1. Clone or download the repository to your local machine.
+2. Ensure you have AutoIt installed on your system.
+3. Run the `FirewallBlocker.au3` script to launch the GUI application.
 
 ## Usage
 
-1. Run the script (`firewall.au3`) using AutoIt.
-2. Click the "Browse" button to select a folder for scanning.
-3. Click "Scan Folder" to scan the selected folder and list executable files in the ListView.
-4. Check the checkboxes next to .exe files you want to block.
-5. Click "Block Selected" to create both inbound and outbound firewall rules for the selected .exe files.
-6. Use "Clear List" to remove all items from the ListView.
+1. Launch the application by running the `FirewallBlocker.au3` script.
+2. Click the "Browse" button to select a folder to scan for executable files.
+3. Click "Scan Folder" to populate the list view with executable files found in the selected folder.
+4. Select individual files or use "Select All" to choose multiple files.
+5. Click "Block Selected" to create firewall rules blocking the selected executable files.
+6. To remove firewall blocks, select the desired files and click "Remove Block."
+7. Use the "Clear List" button to clear the list view and start over.
 
-## Screenshots
+## Contributing
 
-
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
